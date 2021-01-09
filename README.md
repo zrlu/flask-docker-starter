@@ -6,13 +6,13 @@ If you have docker, you can run the following in your host machine:
 
 ```bash
 docker build . -t flask
-docker run -d -p 5000:5000 --name my_container flask:latest
+docker run -d -p 80:5000 --name my_container flask:latest
 ```
 
 In your the machine:
 
 ```bash
-curl http://localhost:5000/api/ping
+curl http://localhost/api/ping
 ```
 
 To run tests:
@@ -33,7 +33,7 @@ flask run
 In another terminal:
 
 ```bash
-curl http://localhost:5000/api/ping
+curl http://localhost/api/ping
 ```
 
 To run tests:
